@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import RequestsRevo from "./components/requestsCase"
+import ContractRevo from "./components/contractCase"
+import OutPaymentRevo from "./components/outPaymentCase"
+import PaymentPlanRevo from "./components/paymentPlanCase"
+import IncPaymentRevo from "./components/incPaymentCase"
+import CalculationRevo from "./components/calculationCase"
+import {RequestsControllers, ContractControllers, OutgoinigPaymentControllers, PaymentPlanControllers, IncomingPaymentControllers, CalculationControllers} from "./controllers/index.js"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+    <RequestsRevo pushRequests={() => RequestsControllers.pushRequests()}/>
+    <ContractRevo pushContract={() => ContractControllers.pushContract()}/>
+    <OutPaymentRevo pushOutPayment={() => OutgoinigPaymentControllers.pushOutPayment()}/>
+    <PaymentPlanRevo pushPaymentPlan={() => PaymentPlanControllers.pushPaymentPlan()}/>
+    <IncPaymentRevo pushIncPayment={() => IncomingPaymentControllers.pushIncPayment()}/>
+    <CalculationRevo pushCalculation={() => CalculationControllers.pushCalculation()}/>
+    </React.Fragment>
   );
 }
 
