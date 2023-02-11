@@ -1,0 +1,40 @@
+.startForm {
+   // max-width: 400px;
+   // margin: 0 auto;
+   // text-align: center;
+
+   width: 50%;
+   height: 800px;
+   overflow: auto;
+   float: left;
+
+   // position: absolute; 
+   // left: 0; 
+   // top: 0; 
+   // width: 50%;
+
+   label {
+      text-align: left;
+      display: block;
+   }
+   h2 {
+      font-size: 20px;
+      color: #f1356d;
+      margin-bottom: 30px;
+   }
+   input {
+      width: 100%;
+      padding: 6px 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      display: block;
+   }
+   button {
+      background: #f1356d;
+      color: #ddd;
+   }
+
+
+}
+
