@@ -2,7 +2,7 @@ function ContractRevo({pushContract}) {
    const onClickPlus = ({}) => {
 //      console.log(pushRequests()) //переменная obj = {title, price, imageUrl} => функция onClickAdd
       pushContract();
-      alert('МОЯ ПУСИ ДЛЯ НЕГО ВСЕГДА ГОТОВА, а ты консоль смотри!')
+      alert('Ушли запросы, смотри консоль')
    }
    return(
       <div>Толық газ ағасы 

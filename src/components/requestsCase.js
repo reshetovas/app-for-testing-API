@@ -2,7 +2,7 @@ function RequestsRevo({pushRequests}) {
    const onClickRequests = ({}) => {
 //      console.log(pushRequests()) //переменная obj = {title, price, imageUrl} => функция onClickAdd
       pushRequests();
-      alert('АЖ ТАПКИ УЛЕТЕЛИ!')
+      alert('Ушли запросы, смотри консоль')
    }
    return(
       

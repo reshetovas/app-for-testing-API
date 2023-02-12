@@ -2,7 +2,7 @@ function IncPaymentRevo({pushIncPayment}) {
    const onClickPlus = ({}) => {
 //      console.log(pushRequests()) //переменная obj = {title, price, imageUrl} => функция onClickAdd
       pushIncPayment();
-      alert('МОЯ ПУСИ ДЛЯ НЕГО ВСЕГДА ГОТОВА, а ты консоль смотри!')
+      alert('Ушли запросы, смотри консоль')
    }
    return(
       <div>Тут платеж - 

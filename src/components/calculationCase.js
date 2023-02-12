@@ -2,7 +2,7 @@ function IncPaymentRevo({pushCalculation}) {
    const onClickPlus = ({}) => {
 //      console.log(pushRequests()) //переменная obj = {title, price, imageUrl} => функция onClickAdd
       pushCalculation();
-      alert('МОЯ ПУСИ ДЛЯ НЕГО ВСЕГДА ГОТОВА, а ты консоль смотри!')
+      alert('Ушли запросы, смотри консоль')
    }
    return(
       <div>Тут начисления - 
